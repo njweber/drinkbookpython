@@ -1,14 +1,5 @@
 /* CSS stylesheet for individual drinks */
 
-/* The Drink Book Title */
-.title {
-  padding: 10px;
-  margin: 0px;
-  text-decoration: underline overline dotted rgb(48, 240, 224);
-  font-size: 55px;
-
-}
-
 /* MAIN BODY */
 body {
   background-color: #bbbbbb; /* Light gray color */
