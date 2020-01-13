@@ -2,7 +2,8 @@
 {% load static %}
 {% block content %}
 <div>
-  <h1>{{ drink.name|capfirst }}</h1>
+  <h1 class="title">The Drink Book</h1>
+  <h2>{{ drink.name|capfirst }}</h2>
   <p>ABV: {{ drink.abv }}</p>
   <p style="padding-bottom: 25px;">{{ drink.description }}</p>
   <table align="center">

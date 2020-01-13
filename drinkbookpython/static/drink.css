@@ -9,6 +9,10 @@
 
 }
 
+h2 {
+  font-size: 30px;
+}
+
 /* Top menu nav bar*/
 ul {
   list-style-type: none;
@@ -50,7 +54,7 @@ h1 {
 
 table {
   background-color: #9ee8ff;
-  box-shadow: -1px 1px 5px 9px rgba(0, 175, 206, 0.75);
+  box-shadow: 7px 7px 7px rgba(0, 175, 206, 0.75);
   padding: 50px;
   border-collapse: collapse;
 }
