@@ -1,0 +1,15 @@
+{% load static %}
+<html lang="en-US">
+  <head>
+    <title>{{ drink.name|capfirst }}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'drink.css' %}">
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+  </body>
+  <footer>
+    <p>&copy; Developed by Nate Weber &#124; Privacy Policy</p>
+  </footer>
+</html>

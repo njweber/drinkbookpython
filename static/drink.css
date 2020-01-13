@@ -1,0 +1,50 @@
+/* CSS stylesheet for individual drinks */
+
+/* The Drink Book Title */
+.title {
+  padding: 10px;
+  margin: 0px;
+  text-decoration: underline overline dotted rgb(48, 240, 224);
+  font-size: 55px;
+
+}
+
+/* MAIN BODY */
+body {
+  background-color: #bbbbbb; /* Light gray color */
+  font-family:"Courier New", monospace;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 50px;
+}
+
+table {
+  background-color: #9ee8ff;
+  box-shadow: -1px 1px 5px 9px rgba(0, 175, 206, 0.75);
+  padding: 50px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+}
+
+/* FOOTER */
+footer{
+    bottom: 0;
+    position: absolute;
+    width: 99%;
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en-US">
+  <head>
+    <title>The Drink Book</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+  <body>
+      <ul>
+        <li><a class="active" href="../">Home</a></li>
+		    <li><a href="../alldrinks">All Drinks</a></li>
+        <li><a href="../partydrinks">Party Drinks</a></li>
+        <li><a href="../findadrink">Find a Drink</a></li>
+        <li><a href="../contact">Contact</a></li>
+        <li><a href="../about">About</a></li>
+      </ul>
+      <div>
+        <h1 class="title">The Drink Book</h1>
+        <h2 class="featured">Featured Drinks</h2>
+        {% for drink in drinks %}
+        <a class="drink_link" href="{% url 'drink_detail' drink.id %}">
+          <div class="tile-block">
+            <div class="tile" style="display:table-row;">
+              {% static "images/" as image %}
+              <img src="{{ image }}{{ drink.name }}.png" alt='{{ drink.name }} image'>
+              <div>
+                  <h3 class="tooltip">{{ drink.name|capfirst }}<span class="tooltiptext">{{ drink.description }}</span></h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </body>
+    <footer>
+        <p>&copy; Developed by Nate Weber &#124; Privacy Policy</p>
+    </footer>
+  </html>
