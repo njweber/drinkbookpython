@@ -1,0 +1,23 @@
+{% load static %}
+<html lang="en-US">
+  <head>
+    <title>{{ drink.name|capfirst }}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'drink.css' %}">
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="../">Home</a></li>
+      <li><a href="../alldrinks">All Drinks</a></li>
+      <li><a href="../partydrinks">Party Drinks</a></li>
+      <li><a href="../findadrink">Find a Drink</a></li>
+      <li><a href="../contact">Contact</a></li>
+      <li><a href="../about">About</a></li>
+    </ul>
+    {% block content %}
+    {% endblock %}
+  </body>
+  <footer>
+    <p>&copy; Developed by Nate Weber &#124; Privacy Policy</p>
+  </footer>
+</html>
